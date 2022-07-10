@@ -67,9 +67,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Boostrap\assets\demo\chart-area-demo.js" />
+    <Content Include="Boostrap\assets\demo\chart-bar-demo.js" />
+    <Content Include="Boostrap\assets\demo\chart-pie-demo.js" />
+    <Content Include="Boostrap\assets\demo\datatables-demo.js" />
+    <Content Include="Boostrap\assets\img\error-404-monochrome.svg" />
+    <Content Include="Boostrap\css\styles.css" />
+    <Content Include="Boostrap\js\datatables-simple-demo.js" />
+    <Content Include="Boostrap\js\scripts.js" />
+    <Content Include="Defaultt.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Defaultt.aspx.cs">
+      <DependentUpon>Defaultt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Defaultt.aspx.designer.cs">
+      <DependentUpon>Defaultt.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
