@@ -11,34 +11,43 @@ namespace HospitalSystem
 {
 
 
-    public partial class Defaultt
+    public partial class GelisBilgisi
     {
 
         /// <summary>
-        /// login_page control.
+        /// doktor_txt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button login_page;
+        protected global::System.Web.UI.WebControls.TextBox doktor_txt;
 
         /// <summary>
-        /// register_page control.
+        /// tarih_txt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button register_page;
+        protected global::System.Web.UI.WebControls.TextBox tarih_txt;
 
         /// <summary>
-        /// hasta_cikis control.
+        /// txt_servis control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button hasta_cikis;
+        protected global::System.Web.UI.WebControls.TextBox txt_servis;
+
+        /// <summary>
+        /// btn_gelis control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_gelis;
     }
 }
