@@ -11,43 +11,43 @@ namespace HospitalSystem
 {
 
 
-    public partial class Defaultt
+    public partial class GirisSayfasi
     {
 
         /// <summary>
-        /// login_page control.
+        /// DropDownList1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button login_page;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
 
         /// <summary>
-        /// register_page control.
+        /// txt_ad control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button register_page;
+        protected global::System.Web.UI.WebControls.TextBox txt_ad;
 
         /// <summary>
-        /// hasta_cikis control.
+        /// txt_sifre control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button hasta_cikis;
+        protected global::System.Web.UI.WebControls.TextBox txt_sifre;
 
         /// <summary>
-        /// GridView1 control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

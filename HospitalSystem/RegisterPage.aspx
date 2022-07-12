@@ -56,10 +56,10 @@
                                                 </div>
                                             </div>
                                             <div class="mt-4 mb-0">
-                                                <asp:Button ID="btn_kayit"  class="btn btn-warning btn-block"  runat="server" Text="Kayıt Ekle" />
+                                                <asp:Button ID="btn_kayit"  class="btn btn-warning btn-block"  runat="server" Text="Kayıt Ekle" OnClick="btn_kayit_Click" />
                                             </div>
                                         <div class="mt-4 mb-0">
-                                                <asp:Button ID="btn_gelisbilgisi"  class="btn btn-warning btn-block"  runat="server" Text="Geliş Bilgisi Oluştur" />
+                                                <asp:Button ID="btn_gelisbilgisi"  class="btn btn-warning btn-block"  runat="server" Text="Geliş Bilgisi Oluştur" OnClick="btn_gelisbilgisi_Click" />
                                             </div>
                                         
                                     </div>
