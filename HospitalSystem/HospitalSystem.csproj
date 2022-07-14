@@ -126,12 +126,20 @@
     <Content Include="Boostrap\js\datatables-simple-demo.js" />
     <Content Include="Boostrap\js\scripts.js" />
     <Content Include="Defaultt.aspx" />
-    <Content Include="GelisBilgisi.aspx" />
-    <Content Include="GirisSayfasi.aspx" />
-    <Content Include="RegisterPage.aspx" />
+    <Content Include="GelisBilgiMstr.aspx" />
+    <Content Include="HastaBul.aspx" />
+    <Content Include="KayitSayfasi.aspx" />
     <Content Include="Web.config" />
+    <Content Include="YetkiGirisMstr.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="default.Master.cs">
+      <DependentUpon>default.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.Master.designer.cs">
+      <DependentUpon>default.Master</DependentUpon>
+    </Compile>
     <Compile Include="Defaultt.aspx.cs">
       <DependentUpon>Defaultt.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -139,30 +147,38 @@
     <Compile Include="Defaultt.aspx.designer.cs">
       <DependentUpon>Defaultt.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GelisBilgisi.aspx.cs">
-      <DependentUpon>GelisBilgisi.aspx</DependentUpon>
+    <Compile Include="GelisBilgiMstr.aspx.cs">
+      <DependentUpon>GelisBilgiMstr.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GelisBilgisi.aspx.designer.cs">
-      <DependentUpon>GelisBilgisi.aspx</DependentUpon>
+    <Compile Include="GelisBilgiMstr.aspx.designer.cs">
+      <DependentUpon>GelisBilgiMstr.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GirisSayfasi.aspx.cs">
-      <DependentUpon>GirisSayfasi.aspx</DependentUpon>
+    <Compile Include="HastaBul.aspx.cs">
+      <DependentUpon>HastaBul.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GirisSayfasi.aspx.designer.cs">
-      <DependentUpon>GirisSayfasi.aspx</DependentUpon>
+    <Compile Include="HastaBul.aspx.designer.cs">
+      <DependentUpon>HastaBul.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KayitSayfasi.aspx.cs">
+      <DependentUpon>KayitSayfasi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KayitSayfasi.aspx.designer.cs">
+      <DependentUpon>KayitSayfasi.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegisterPage.aspx.cs">
-      <DependentUpon>RegisterPage.aspx</DependentUpon>
+    <Compile Include="YetkiGirisMstr.aspx.cs">
+      <DependentUpon>YetkiGirisMstr.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RegisterPage.aspx.designer.cs">
-      <DependentUpon>RegisterPage.aspx</DependentUpon>
+    <Compile Include="YetkiGirisMstr.aspx.designer.cs">
+      <DependentUpon>YetkiGirisMstr.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="default.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

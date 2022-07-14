@@ -11,43 +11,34 @@ namespace HospitalSystem
 {
 
 
-    public partial class GirisSayfasi
+    public partial class HastaBul
     {
 
         /// <summary>
-        /// DropDownList1 control.
+        /// txt_aranan control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.TextBox txt_aranan;
 
         /// <summary>
-        /// txt_ad control.
+        /// GridView4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_ad;
+        protected global::System.Web.UI.WebControls.GridView GridView4;
 
         /// <summary>
-        /// txt_sifre control.
+        /// hasta_bul control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_sifre;
-
-        /// <summary>
-        /// Button1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button hasta_bul;
     }
 }

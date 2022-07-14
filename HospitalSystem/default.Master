@@ -1,21 +1,19 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Defaultt.aspx.cs" Inherits="HospitalSystem.Defaultt" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="default.master.cs" Inherits="HospitalSystem._default" %>
 
 <!DOCTYPE html>
 
-<html lang="tr">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Hastane Sitemi</title>
+<html>
+<head runat="server">
+    <title>Hastane Sitemi</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
         <link href="Boostrap/css/styles.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    </head>
-    <body class="sb-nav-fixed">
-        <form runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-primary">
             <!-- Navbar Brand-->
             <a class="navbar-brand ps-3" href="index.html">Hastane Kayıt Sistemi</a>
@@ -45,21 +43,21 @@
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading"></div>
                             <a class="nav-link" href="index.html">
-                                <asp:Button ID="btn_yeniGelis" runat="server" BackColor="#3366ff" Width="200px" Text="Yeni Geliş Aç" />
+                                <asp:Button ID="btn_yeniGelis" runat="server" BackColor="#3366ff" Width="200px" Text="Yeni Geliş Aç" OnClick="btn_yeniGelis_Click" />
                             </a>
                            
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                                <asp:Button ID="btn_hastaBul" runat="server" BackColor="LightGreen" Width="200px"  Text="Hasta Bul" />
+                            <a class="nav-link">
+                                <asp:Button ID="btn_hastaBul" runat="server" BackColor="LightGreen" Width="200px"  Text="Hasta Bul" OnClick="btn_hastaBul_Click" />
                             </a>
                             
-                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                                <asp:Button ID="btn_giris" runat="server" BackColor="#ff3300" Width="200px"  Text="Yetkili Girişi" />
+                            <a class="nav-link">
+                                <asp:Button ID="btn_giris" runat="server" BackColor="#ff3300" Width="200px"  Text="Yetkili Girişi" OnClick="btn_giris_Click" />
                             </a>
                             
                             
                             
                             <a class="nav-link" href="tables.html">
-                                <asp:Button ID="btn_kayit" runat="server" BackColor="LightGray" Width="200px"  Text="Hasta Kayıt" />
+                                <asp:Button ID="btn_kayit" runat="server" BackColor="LightGray" Width="200px"  Text="Hasta Kayıt" OnClick="btn_kayit_Click" />
                             </a>
                             <a class="nav-link" href="charts.html">
                                 <asp:Button ID="btn_cikis" runat="server" BackColor="LightGray" Width="200px"  Text="Hasta Çıkışı" />
@@ -73,36 +71,18 @@
                 </nav>
             </div>
             <div id="layoutSidenav_content">
+                
                 <main>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
                     <div class="container-fluid px-4">
                         <h1 class="mt-4">Hasta Kayıt</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">Hasta kayıt</li>
                         </ol>
-                        <div>
-                            
-                            
-                        </div>
-                        <div class="row">
-                            <div class="col-xl-6">
-                                <div class="card mb-4">
-                                    <div class="card-header">
-                                        <i class="fas fa-chart-area me-1"></i>
-                                        Area Chart Example
-                                    </div>
-                                    <div class="card-body"><canvas id="myAreaChart" width="100%" height="40"></canvas></div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="card mb-4">
-                                    <div class="card-header">
-                                        <i class="fas fa-chart-bar me-1"></i>
-                                        Bar Chart Example
-                                    </div>
-                                    <div class="card-body"><canvas id="myBarChart" width="100%" height="40"></canvas></div>
-                                </div>
-                            </div>
-                        </div>
+                        
+                        
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>
@@ -142,6 +122,9 @@
         <script src="assets/demo/chart-bar-demo.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
         <script src="js/datatables-simple-demo.js"></script>
-        </form>
-    </body>
+
+            
+        
+    </form>
+</body>
 </html>

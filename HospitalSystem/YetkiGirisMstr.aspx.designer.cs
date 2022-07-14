@@ -11,61 +11,43 @@ namespace HospitalSystem
 {
 
 
-    public partial class RegisterPage
+    public partial class YetkiGirisMstraspx
     {
 
         /// <summary>
-        /// ad_txt control.
+        /// DropDownList1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ad_txt;
+        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
 
         /// <summary>
-        /// soyad_txt control.
+        /// txt_ad control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox soyad_txt;
+        protected global::System.Web.UI.WebControls.TextBox txt_ad;
 
         /// <summary>
-        /// tc_txt control.
+        /// txt_sifre control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tc_txt;
+        protected global::System.Web.UI.WebControls.TextBox txt_sifre;
 
         /// <summary>
-        /// dogumtarihi_txt control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox dogumtarihi_txt;
-
-        /// <summary>
-        /// btn_kayit control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_kayit;
-
-        /// <summary>
-        /// btn_gelisbilgisi control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_gelisbilgisi;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

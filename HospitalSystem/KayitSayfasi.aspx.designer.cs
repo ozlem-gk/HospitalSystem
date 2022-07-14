@@ -11,43 +11,61 @@ namespace HospitalSystem
 {
 
 
-    public partial class GelisBilgisi
+    public partial class KayitSayfasi
     {
 
         /// <summary>
-        /// doktor_txt control.
+        /// ad_txt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox doktor_txt;
+        protected global::System.Web.UI.WebControls.TextBox ad_txt;
 
         /// <summary>
-        /// tarih_txt control.
+        /// soyad_txt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tarih_txt;
+        protected global::System.Web.UI.WebControls.TextBox soyad_txt;
 
         /// <summary>
-        /// txt_servis control.
+        /// tc_txt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_servis;
+        protected global::System.Web.UI.WebControls.TextBox tc_txt;
 
         /// <summary>
-        /// btn_gelis control.
+        /// dogumtarihi_txt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_gelis;
+        protected global::System.Web.UI.WebControls.TextBox dogumtarihi_txt;
+
+        /// <summary>
+        /// btn_kayit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_kayit;
+
+        /// <summary>
+        /// btn_gelisbilgisi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_gelisbilgisi;
     }
 }

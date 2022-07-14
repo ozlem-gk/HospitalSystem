@@ -1,21 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GelisBilgisi.aspx.cs" Inherits="HospitalSystem.GelisBilgisi" %>
-
-<!DOCTYPE html>
-
-<html lang="tr">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Register - SB Admin</title>
-        <link href="Boostrap/css/styles.css" rel="stylesheet" />
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    </head>
-    <body class="bg-danger">
-        <form runat="server">
-        <div id="layoutAuthentication">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/default.Master" AutoEventWireup="true" CodeBehind="GelisBilgiMstr.aspx.cs" Inherits="HospitalSystem.GelisBilgiMstr" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
                 <main>
                     <div class="container">
@@ -51,8 +38,11 @@
                                                
                                             </div>
                                             <div class="mt-4 mb-0">
-                                                <asp:Button ID="btn_gelis"  class="btn btn-warning btn-block"  runat="server" Text="Geliş Bilgisi Ekle" />
+                                                <asp:Button ID="btn_gelis"  class="btn btn-warning btn-block"  runat="server" Text="Geliş Bilgisi Ekle" OnClick="btn_gelis_Click" />
                                             </div>
+                                        <div>
+                                           <asp:GridView ID="grd_girisbilgi_tablo" runat="server"></asp:GridView>
+                                        </div>
                                         
                                         
                                     </div>
@@ -80,6 +70,4 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
-    </form>
-    </body>
-</html>
+</asp:Content>
