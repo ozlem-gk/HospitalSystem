@@ -117,22 +117,93 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Boostrap\assets\demo\chart-area-demo.js" />
-    <Content Include="Boostrap\assets\demo\chart-bar-demo.js" />
-    <Content Include="Boostrap\assets\demo\chart-pie-demo.js" />
-    <Content Include="Boostrap\assets\demo\datatables-demo.js" />
-    <Content Include="Boostrap\assets\img\error-404-monochrome.svg" />
+    <Content Include="Boostrap\assetsb1\demo\chart-area-demo.js" />
+    <Content Include="Boostrap\assetsb1\demo\chart-bar-demo.js" />
+    <Content Include="Boostrap\assetsb1\demo\chart-pie-demo.js" />
+    <Content Include="Boostrap\assetsb1\demo\datatables-demo.js" />
+    <Content Include="Boostrap\assetsb1\img\error-404-monochrome.svg" />
     <Content Include="Boostrap\css\styles.css" />
+    <Content Include="Boostrap\gulp\build.gulp.js" />
+    <Content Include="Boostrap\gulp\clean.gulp.js" />
+    <Content Include="Boostrap\gulp\pug.gulp.js" />
+    <Content Include="Boostrap\gulp\script.gulp.js" />
+    <Content Include="Boostrap\gulp\style.gulp.js" />
+    <Content Include="Boostrap\gulp\utils.js" />
+    <Content Include="Boostrap\gulp\vendor.gulp.js" />
+    <Content Include="Boostrap\gulp\w3c.gulp.js" />
+    <Content Include="Boostrap\gulp\watch.gulp.js" />
     <Content Include="Boostrap\js\datatables-simple-demo.js" />
     <Content Include="Boostrap\js\scripts.js" />
+    <Content Include="Boostrap\public\assets\css\theme-rtl.css" />
+    <Content Include="Boostrap\public\assets\css\theme-rtl.min.css" />
+    <Content Include="Boostrap\public\assets\css\theme.css" />
+    <Content Include="Boostrap\public\assets\css\theme.min.css" />
+    <Content Include="Boostrap\public\assets\img\favicons\android-chrome-192x192.png" />
+    <Content Include="Boostrap\public\assets\img\favicons\android-chrome-512x512.png" />
+    <Content Include="Boostrap\public\assets\img\favicons\apple-touch-icon.png" />
+    <Content Include="Boostrap\public\assets\img\favicons\browserconfig.xml" />
+    <Content Include="Boostrap\public\assets\img\favicons\favicon-16x16.png" />
+    <Content Include="Boostrap\public\assets\img\favicons\favicon-32x32.png" />
+    <Content Include="Boostrap\public\assets\img\favicons\favicon.ico" />
+    <Content Include="Boostrap\public\assets\img\favicons\mstile-150x150.png" />
+    <Content Include="Boostrap\public\assets\img\gallery\article-1.png" />
+    <Content Include="Boostrap\public\assets\img\gallery\article-2.png" />
+    <Content Include="Boostrap\public\assets\img\gallery\article-3.png" />
+    <Content Include="Boostrap\public\assets\img\gallery\user-1.png" />
+    <Content Include="Boostrap\public\assets\img\gallery\user-2.png" />
+    <Content Include="Boostrap\public\assets\img\gallery\user-3.png" />
+    <Content Include="Boostrap\public\assets\img\icons\footer-logo.png" />
+    <Content Include="Boostrap\public\assets\img\icons\logo.png" />
+    <Content Include="Boostrap\public\assets\img\illustrations\about-1.png" />
+    <Content Include="Boostrap\public\assets\img\illustrations\about-2.png" />
+    <Content Include="Boostrap\public\assets\img\illustrations\article-bg.png" />
+    <Content Include="Boostrap\public\assets\img\illustrations\consultation.png" />
+    <Content Include="Boostrap\public\assets\img\illustrations\details-info.png" />
+    <Content Include="Boostrap\public\assets\img\illustrations\dot-2.png" />
+    <Content Include="Boostrap\public\assets\img\illustrations\dot.png" />
+    <Content Include="Boostrap\public\assets\img\illustrations\emergency-care.png" />
+    <Content Include="Boostrap\public\assets\img\illustrations\footer-bg.png" />
+    <Content Include="Boostrap\public\assets\img\illustrations\hero-header.png" />
+    <Content Include="Boostrap\public\assets\img\illustrations\online-pharmacy.png" />
+    <Content Include="Boostrap\public\assets\img\illustrations\search.png" />
+    <Content Include="Boostrap\public\assets\img\illustrations\services-bg.png" />
+    <Content Include="Boostrap\public\assets\img\illustrations\test.jpg" />
+    <Content Include="Boostrap\public\assets\img\illustrations\testimonial-bg.png" />
+    <Content Include="Boostrap\public\assets\img\illustrations\tracking.png" />
+    <Content Include="Boostrap\public\assets\img\logo.png" />
+    <Content Include="Boostrap\public\assets\js\bootstrap-navbar.js" />
+    <Content Include="Boostrap\public\assets\js\theme.js" />
+    <Content Include="Boostrap\public\assets\js\theme.min.js" />
+    <Content Include="Boostrap\public\assets\video\beach.jpg" />
+    <Content Include="Boostrap\public\assets\video\beach.mp4" />
+    <Content Include="Boostrap\public\assets\video\beach.webm" />
+    <Content Include="Boostrap\public\index.html" />
+    <Content Include="Boostrap\public\vendors\%40popperjs\popper.min.js" />
+    <Content Include="Boostrap\public\vendors\bootstrap\bootstrap.min.js" />
+    <Content Include="Boostrap\public\vendors\fontawesome\all.min.js" />
+    <Content Include="Boostrap\public\vendors\is\is.min.js" />
+    <Content Include="Boostrap\src\js\bootstrap-navbar.js" />
+    <Content Include="Boostrap\src\js\detector.js" />
+    <Content Include="Boostrap\src\js\theme.js" />
+    <Content Include="Boostrap\src\js\utils.js" />
+    <Content Include="Boostrap\src\scss\theme.css" />
+    <Content Include="CikisBilgisiMstr.aspx" />
     <Content Include="Defaultt.aspx" />
     <Content Include="GelisBilgiMstr.aspx" />
     <Content Include="HastaBul.aspx" />
     <Content Include="KayitSayfasi.aspx" />
+    <Content Include="MainPage.aspx" />
     <Content Include="Web.config" />
     <Content Include="YetkiGirisMstr.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CikisBilgisiMstr.aspx.cs">
+      <DependentUpon>CikisBilgisiMstr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CikisBilgisiMstr.aspx.designer.cs">
+      <DependentUpon>CikisBilgisiMstr.aspx</DependentUpon>
+    </Compile>
     <Compile Include="default.Master.cs">
       <DependentUpon>default.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -168,6 +239,13 @@
     <Compile Include="KayitSayfasi.aspx.designer.cs">
       <DependentUpon>KayitSayfasi.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="YetkiGirisMstr.aspx.cs">
       <DependentUpon>YetkiGirisMstr.aspx</DependentUpon>
@@ -179,6 +257,96 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="default.Master" />
+    <Content Include="Boostrap\gulp\gulp.json" />
+    <Content Include="Boostrap\public\assets\css\theme-rtl.css.map" />
+    <Content Include="Boostrap\public\assets\css\theme-rtl.min.css.map" />
+    <Content Include="Boostrap\public\assets\css\theme.css.map" />
+    <Content Include="Boostrap\public\assets\css\theme.min.css.map" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-Black.eot" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-Black.ttf" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-Black.woff" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-Black.woff2" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-BlackItalic.eot" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-BlackItalic.ttf" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-BlackItalic.woff" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-BlackItalic.woff2" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-Bold.eot" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-Bold.ttf" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-Bold.woff" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-Bold.woff2" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-BoldItalic.eot" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-BoldItalic.ttf" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-BoldItalic.woff" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-BoldItalic.woff2" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-Book.eot" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-Book.ttf" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-Book.woff" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-Book.woff2" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-BookItalic.eot" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-BookItalic.ttf" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-BookItalic.woff" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-BookItalic.woff2" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-Medium.eot" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-Medium.ttf" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-Medium.woff" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-Medium.woff2" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-MediumItalic.eot" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-MediumItalic.ttf" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-MediumItalic.woff" />
+    <Content Include="Boostrap\public\assets\fonts\CircularStd-MediumItalic.woff2" />
+    <Content Include="Boostrap\public\assets\img\.gitkeep" />
+    <Content Include="Boostrap\public\assets\img\favicons\manifest.json" />
+    <Content Include="Boostrap\public\assets\img\favicons\site.webmanifest" />
+    <Content Include="Boostrap\public\assets\js\theme.js.map" />
+    <Content Include="Boostrap\public\assets\js\theme.min.js.map" />
+    <Content Include="Boostrap\public\assets\video\.gitkeep" />
+    <Content Include="Boostrap\public\vendors\bootstrap\bootstrap.min.js.map" />
+    <Content Include="Boostrap\src\pug\index.pug" />
+    <Content Include="Boostrap\src\pug\layouts\Layout.pug" />
+    <Content Include="Boostrap\src\pug\layouts\LayoutTheme.pug" />
+    <Content Include="Boostrap\src\pug\mixins\core\Background.pug" />
+    <Content Include="Boostrap\src\pug\mixins\core\Functions.pug" />
+    <Content Include="Boostrap\src\pug\mixins\core\Section.pug" />
+    <Content Include="Boostrap\src\pug\mixins\core\ThemeStyle.pug" />
+    <Content Include="Boostrap\src\pug\mixins\home\landing\AboutMobileApps.pug" />
+    <Content Include="Boostrap\src\pug\mixins\home\landing\AboutProviders.pug" />
+    <Content Include="Boostrap\src\pug\mixins\home\landing\Article.pug" />
+    <Content Include="Boostrap\src\pug\mixins\home\landing\Footer.pug" />
+    <Content Include="Boostrap\src\pug\mixins\home\landing\HeroHeader.pug" />
+    <Content Include="Boostrap\src\pug\mixins\home\landing\Services.pug" />
+    <Content Include="Boostrap\src\pug\mixins\home\landing\Testimonial.pug" />
+    <Content Include="Boostrap\src\pug\mixins\navbars\NavbarTrafalgar.pug" />
+    <Content Include="Boostrap\src\pug\mixins\Variables.pug" />
+    <Content Include="Boostrap\src\scss\theme.css.map" />
+    <Content Include="Boostrap\src\scss\theme.scss" />
+    <Content Include="Boostrap\src\scss\theme\.gitkeep" />
+    <Content Include="Boostrap\src\scss\theme\helpers\_background.scss" />
+    <Content Include="Boostrap\src\scss\theme\helpers\_borders.scss" />
+    <Content Include="Boostrap\src\scss\theme\helpers\_colored-links.scss" />
+    <Content Include="Boostrap\src\scss\theme\helpers\_flex.scss" />
+    <Content Include="Boostrap\src\scss\theme\helpers\_position.scss" />
+    <Content Include="Boostrap\src\scss\theme\helpers\_shadow.scss" />
+    <Content Include="Boostrap\src\scss\theme\helpers\_text.scss" />
+    <Content Include="Boostrap\src\scss\theme\_about.scss" />
+    <Content Include="Boostrap\src\scss\theme\_badge.scss" />
+    <Content Include="Boostrap\src\scss\theme\_browser-support.scss" />
+    <Content Include="Boostrap\src\scss\theme\_button.scss" />
+    <Content Include="Boostrap\src\scss\theme\_card.scss" />
+    <Content Include="Boostrap\src\scss\theme\_fonts.scss" />
+    <Content Include="Boostrap\src\scss\theme\_functions.scss" />
+    <Content Include="Boostrap\src\scss\theme\_helpers.scss" />
+    <Content Include="Boostrap\src\scss\theme\_hover.scss" />
+    <Content Include="Boostrap\src\scss\theme\_icon.scss" />
+    <Content Include="Boostrap\src\scss\theme\_mixed.scss" />
+    <Content Include="Boostrap\src\scss\theme\_mixins.scss" />
+    <Content Include="Boostrap\src\scss\theme\_reboot.scss" />
+    <Content Include="Boostrap\src\scss\theme\_testimonial.scss" />
+    <Content Include="Boostrap\src\scss\theme\_theme.scss" />
+    <Content Include="Boostrap\src\scss\theme\_utilities.scss" />
+    <Content Include="Boostrap\src\scss\theme\_variables.scss" />
+    <Content Include="Boostrap\src\scss\_bootstrap.scss" />
+    <Content Include="Boostrap\src\scss\_user-variables.scss" />
+    <Content Include="Boostrap\src\scss\_user.scss" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -186,6 +354,13 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Boostrap\public\plugins\" />
+    <Folder Include="Boostrap\public\vendors\%40popper\" />
+    <Folder Include="Boostrap\public\vendors\popper\" />
+    <Folder Include="Boostrap\src\pug\mixins\layouts\" />
+    <Folder Include="Boostrap\src\pug\pages\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

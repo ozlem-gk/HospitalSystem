@@ -156,5 +156,10 @@ namespace HospitalSystem
         {
             Response.Redirect("GelisBilgiMstr.aspx");
         }
+
+        protected void btn_cikis_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CikisBilgisiMstr.aspx");
+        }
     }
 }
