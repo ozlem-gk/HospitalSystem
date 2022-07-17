@@ -1,8 +1,21 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/default.Master" AutoEventWireup="true" CodeBehind="YetkiGirisMstr.aspx.cs" Inherits="HospitalSystem.YetkiGirisMstraspx" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div id="layoutAuthentication">
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginPage.aspx.cs" Inherits="HospitalSystem.LoginPage" %>
+
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Login - SB Admin</title>
+        <link href="Boostrap/css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+    <body class="bg-primary">
+        <form runat="server">
+     <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
                 <main>
                     <div class="container">
@@ -39,7 +52,7 @@
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-0">
                                                 <!--<a class="small" href="password.html">Forgot Password?</a>-->
                                                 <!--<a class="btn btn-primary" href="index.html">Login</a>-->
-                                            <asp:Button ID="Button1" CssClass="form-control" BackColor="Gray"  runat="server" Text="Button" OnClick="Button1_Click" />
+                                            <asp:Button ID="giris" CssClass="form-control" BackColor="Gray"  runat="server" Text="giris" OnClick="giris_Click" />
                                             </div>
                                         
                                     </div>
@@ -68,5 +81,7 @@
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
-</asp:Content>
+        <script src="Boostrap/js/scripts.js"></script>
+        </form>
+   </body>
+</html>

@@ -192,9 +192,9 @@
     <Content Include="GelisBilgiMstr.aspx" />
     <Content Include="HastaBul.aspx" />
     <Content Include="KayitSayfasi.aspx" />
+    <Content Include="LoginPage.aspx" />
     <Content Include="MainPage.aspx" />
     <Content Include="Web.config" />
-    <Content Include="YetkiGirisMstr.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CikisBilgisiMstr.aspx.cs">
@@ -239,6 +239,13 @@
     <Compile Include="KayitSayfasi.aspx.designer.cs">
       <DependentUpon>KayitSayfasi.aspx</DependentUpon>
     </Compile>
+    <Compile Include="LoginPage.aspx.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginPage.aspx.designer.cs">
+      <DependentUpon>LoginPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.aspx.cs">
       <DependentUpon>MainPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -247,13 +254,6 @@
       <DependentUpon>MainPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="YetkiGirisMstr.aspx.cs">
-      <DependentUpon>YetkiGirisMstr.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="YetkiGirisMstr.aspx.designer.cs">
-      <DependentUpon>YetkiGirisMstr.aspx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="default.Master" />

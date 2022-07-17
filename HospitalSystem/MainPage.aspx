@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 
-<html lang="en-US" dir="ltr">
+<html lang="tr" dir="ltr">
 
   <head>
     <meta charset="utf-8">
@@ -13,7 +13,7 @@
     <!-- ===============================================-->
     <!--    Document Title-->
     <!-- ===============================================-->
-    <title>Trafalgar | Landing, Corporate &amp; Business Templatee</title>
+    <title>Hastane Otomasyonu| Hasta Kayıt </title>
 
 
     <!-- ===============================================-->
@@ -38,13 +38,14 @@
 
  
   <body>
+      <form runat="server">
 
     <!-- ===============================================-->
     <!--    Main Content-->
     <!-- ===============================================-->
     <main class="main" id="top">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="#"><img class="d-inline-block me-3" src="assets/img/icons/logo.png" alt="" />Trafalgar</a>
+        <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="#"><img class="d-inline-block me-3" src="Boostrap/public/assets/img/icons/logo.png" alt="" />Trafalgar</a>
           <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
@@ -64,10 +65,11 @@
 
         <div class="container position-relative">
           <div class="row align-items-center">
-            <div class="col-md-5 col-lg-6 order-md-1 pt-8"><img class="img-fluid" src="Boostrap/assets/img/illustrations/hero-header.png" alt="" /></div>
+            <div class="col-md-5 col-lg-6 order-md-1 pt-8"><img class="img-fluid" src="Boostrap/public/assets/img/illustrations/hero-header.png" alt="" /></div>
             <div class="col-md-7 col-lg-6 text-center text-md-start pt-5 pt-md-9">
-              <h1 class="mb-4 display-3 fw-bold">Virtual healthcare <br class="d-block d-lg-none d-xl-block" />for you.</h1>
-              <p class="mt-3 mb-4 fs-1">Trafalgar provides progressive, and affordable<br class="d-none d-lg-block" />healthcare, accessible on mobile and online<br class="d-none d-lg-block" />for everyone</p><a class="btn btn-lg btn-primary rounded-pill hover-top" href="#" role="button">Learn more</a>
+              <h1 class="mb-4 display-3 fw-bold">E-Sağlık Hizmeti <br class="d-block d-lg-none d-xl-block" />Herkes İçin</h1>
+              <p class="mt-3 mb-4 fs-1">Daha kolay ve güvenli sağlık sistemi<br class="d-none d-lg-block" />Kolay ve anlaşılır grafikler, Hızlı hizmet<br class="d-none d-lg-block" />Kolay kullanım</p><!--<a class="btn btn-lg btn-primary rounded-pill hover-top" href="#" role="button">Giris yap</a>-->
+                <asp:Button ID="Button1" CssClass="btn btn-lg btn-primary rounded-pill hover-top" runat="server" Text="Giriş Yap" OnClick="Button1_Click" />
             </div>
           </div>
         </div>
@@ -199,7 +201,7 @@
               <hr class="text-dark mx-auto mx-md-0" style="height:2px;width:50px" />
               <p class="pt-3">Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely</p>
               <div class="py-3">
-                <button class="btn btn-lg btn-outline-primary rounded-pill" type="submit">Learn more
+                <button class="btn btn-lg btn-outline-primary rounded-pill" type="submit">Giriş yapın
                   <svg class="bi bi-arrow-down-short" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"></path>
                   </svg>
@@ -281,7 +283,7 @@
                             <p class="fw-normal mb-0">Web Designer</p>
                           </div>
                           <div class="w-md-75">
-                            <p class="card-text ms-md-5">“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”</p>
+                            <p class="card-text ms-md-5">“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous, long calls, or administrative hassle) and securely”</p>
                           </div>
                         </div>
                       </div>
@@ -449,6 +451,7 @@
     <script src="Boostrap/public/assets/js/theme.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&amp;display=swap" rel="stylesheet">
+  </form>
   </body>
                 
 </html>

@@ -11,7 +11,7 @@ namespace HospitalSystem
 {
 
 
-    public partial class YetkiGirisMstraspx
+    public partial class LoginPage
     {
 
         /// <summary>
@@ -42,12 +42,12 @@ namespace HospitalSystem
         protected global::System.Web.UI.WebControls.TextBox txt_sifre;
 
         /// <summary>
-        /// Button1 control.
+        /// giris control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button giris;
     }
 }
