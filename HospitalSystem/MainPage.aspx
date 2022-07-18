@@ -49,11 +49,16 @@
           <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
-              <li class="nav-item"><a class="nav-link fw-bold active" aria-current="page" href="#">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Find a doctor</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Apps</a></li>
-              <li class="nav-item"><a class="nav-link" href="#testimonial">Testimonials</a></li>
-              <li class="nav-item"><a class="nav-link" href="#about">About us</a></li>
+              <li class="nav-item"><a class="nav-link fw-bold active" aria-current="page" href="#">
+                  <asp:Button ID="Button11" runat="server" CssClass="btn btn-lg btn-outline-primary rounded-pill" Text="Anasayfa" /></a></li>
+              <li class="nav-item"><a class="nav-link" href="#">
+                  <asp:Button ID="Button7" aria-current="page"  CssClass="btn btn-lg btn-outline-primary rounded-pill" runat="server" Text="Doktor Ara" OnClick="Button7_Click" /></a></li>
+              <li class="nav-item"><a class="nav-link" href="#">
+                  <asp:Button ID="Button8" CssClass="btn btn-lg btn-outline-primary rounded-pill" runat="server" Text="Hasta Ara" OnClick="Button8_Click" /></a></li>
+              <li class="nav-item"><a class="nav-link" href="#testimonial">
+                  <asp:Button ID="Button9" CssClass="btn btn-lg btn-outline-primary rounded-pill" aria-current="page" runat="server" Text="Grafiklere Git" /></a></li>
+              <li class="nav-item"><a class="nav-link" href="#about">
+                  <asp:Button ID="Button10" runat="server" CssClass="btn btn-lg btn-outline-primary rounded-pill" Text="Çıkış Yap" /></a></li>
             </ul>
           </div>
         </div>
@@ -92,7 +97,7 @@
           </div>
           <div class="row justify-content-center">
             <div class="col-sm-9 col-xl-8 text-center">
-              <p>We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
+              <p>&nbsp;</p>
             </div>
           </div>
           <div class="row justify-content-center h-100 pt-7 g-4">
@@ -101,29 +106,33 @@
                 <div class="card-body text-center text-md-start">
                   <div class="py-3"><img class="img-fluid" src="Boostrap/public/assets/img/illustrations/search.png" height="90" alt="" /></div>
                   <div class="py-3">
-                    <h4 class="fw-bold card-title">Search doctor</h4>
+                    <h4 class="fw-bold card-title">Doktor Ara</h4>
+                      <asp:Button ID="Button2" CssClass="btn btn-lg btn-outline-primary rounded-pill" runat="server" Text="Button" OnClick="Button2_Click" />
                     <p class="card-text">Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-sm-9 col-md-4">
+               <div class="col-sm-9 col-md-4">
               <div class="card h-100 w-100 shadow rounded-lg p-3 p-md-2 p-lg-3 p-xl-5">
                 <div class="card-body text-center text-md-start">
-                  <div class="py-3"><img class="img-fluid" src="Boostrap/public/assets/img/illustrations/online-pharmacy.png" height="90" alt="" /></div>
+                  <div class="py-3"><img class="img-fluid" src="Boostrap/public/assets/img/illustrations/search.png" height="90" alt="" /></div>
                   <div class="py-3">
-                    <h4 class="fw-bold card-title">Online pharmacy</h4>
-                    <p class="card-text">Buy your medicines with our mobile application with a simple delivery system</p>
+                    <h4 class="fw-bold card-title">Hasta Kayıtları</h4>
+                      <asp:Button ID="Button5" CssClass="btn btn-lg btn-outline-primary rounded-pill" runat="server" Text="Button" />
+                    <p class="card-text">Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
                   </div>
                 </div>
               </div>
             </div>
+           
             <div class="col-sm-9 col-md-4">
               <div class="card h-100 w-100 shadow rounded-lg p-3 p-md-2 p-lg-3 p-xl-5">
                 <div class="card-body text-center text-md-start">
                   <div class="py-3"><img class="img-fluid" src="Boostrap/public/assets/img/illustrations/consultation.png" height="90" alt="" /></div>
                   <div class="py-3">
-                    <h4 class="fw-bold card-title">Consultation</h4>
+                    <h4 class="fw-bold card-title">Hasta Dökümantasyonu&nbsp;</h4>
+                      <asp:Button ID="Button3" CssClass="btn btn-lg btn-outline-primary rounded-pill" runat="server" Text="Button" OnClick="Button3_Click" />
                     <p class="card-text">Free consultation with our trusted doctors and get the best recomendations</p>
                   </div>
                 </div>
@@ -134,7 +143,8 @@
                 <div class="card-body text-center text-md-start">
                   <div class="py-3"><img class="img-fluid" src="Boostrap/public/assets/img/illustrations/details-info.png" height="90" alt="" /></div>
                   <div class="py-3">
-                    <h4 class="fw-bold card-title">Details info</h4>
+                    <h4 class="fw-bold card-title">Hasta Grafikleri</h4>
+                      <asp:Button ID="Button4" CssClass="btn btn-lg btn-outline-primary rounded-pill" runat="server" Text="Button" />
                     <p class="card-text">You can get 24/7 urgent care for yourself or your children and your lovely family</p>
                   </div>
                 </div>
@@ -381,7 +391,8 @@
               <ul class="list-unstyled mb-md-4 mb-lg-0">
                 <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">About</a></li>
                 <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Testimonials</a></li>
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Find a doctor</a></li>
+                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!"><asp:Button ID="Button6" runat="server" Text="Button" /></a>
+                    </li>
                 <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Apps</a></li>
               </ul>
             </div>

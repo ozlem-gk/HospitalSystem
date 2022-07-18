@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="default.master.cs" Inherits="HospitalSystem._default" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="VitalBulgular.master.cs" Inherits="HospitalSystem.VitalBulgular" %>
 
 <!DOCTYPE html>
 
@@ -12,11 +12,11 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+  <form id="form1" runat="server">
         
-        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-primary">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-warning">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="index.html">Hastane Kayıt Sistemi</a>
+            <a class="navbar-brand ps-3" href="index.html">Vital Bulgular</a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
             <!-- Navbar Search-->
@@ -25,43 +25,40 @@
             <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li>
-                            <asp:Button ID="login_page" CssClass="dropdown-item" runat="server" Text="Giriş" OnClick="login_page_Click" /></li>
-                        <li>
-                            <asp:Button ID="register_page" CssClass="dropdown-item"  runat="server" Text="Hasta Kayıt" /></li>
-                        <li>
-                            <asp:Button ID="hasta_cikis" CssClass="dropdown-item"  runat="server" Text="Hasta Çıkış" /></li>
-                    </ul>
+                  
                 </li>
             </ul>
         </nav>
         <div id="layoutSidenav">
             <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading"></div>
                             <a class="nav-link" href="index.html">
-                                <asp:Button ID="btn_yeniGelis" runat="server" BackColor="#3366ff" Width="200px" Text="Yeni Geliş Aç" OnClick="btn_yeniGelis_Click" />
+                                <asp:Button ID="btn_ates" runat="server"  BackColor="#9466e8" Width="200px" Text="Ateş" OnClick="btn_ates_Click1" />
                             </a>
                            
                             <a class="nav-link">
-                                <asp:Button ID="btn_hastaBul" runat="server" BackColor="LightGreen" Width="200px"  Text="Hasta Bul" OnClick="btn_hastaBul_Click" />
+                                <asp:Button ID="btn_nabiz" runat="server" BackColor="#9466e8" Width="200px"  Text="Nabız" OnClick="btn_nabiz_Click" />
                             </a>
                             
                             <a class="nav-link">
-                                <asp:Button ID="btn_doktorBul" runat="server" BackColor="#ff3300" Width="200px"  Text="Doktor Ara" OnClick="btn_doktorBul_Click" />
+                                <asp:Button ID="btn_solunum" runat="server" BackColor="#9466e8" Width="200px"  Text="Solunum" OnClick="btn_solunum_Click" />
                             </a>
                             
                             
                             
                             <a class="nav-link" href="tables.html">
-                                <asp:Button ID="btn_kayit" runat="server" BackColor="LightGray" Width="200px"  Text="Hasta Kayıt" OnClick="btn_kayit_Click" />
+                                <asp:Button ID="btn_tansiyon" runat="server" BackColor="#9466e8" Width="200px"  Text="Tansiyon" OnClick="btn_tansiyon_Click" />
                             </a>
                             <a class="nav-link" href="charts.html">
-                                <asp:Button ID="btn_cikis" runat="server" BackColor="LightGray" Width="200px"  Text="Hasta Çıkışı" OnClick="btn_cikis_Click" />
+                                <asp:Button ID="btn_kan_sekeri" runat="server" BackColor="#9466e8" Width="200px"  Text="Kan Şekeri" OnClick="btn_kan_sekeri_Click" />
                             </a>
+                            <a class="nav-link">
+                                <asp:Button ID="btn_cikis" runat="server" BackColor="#757575" Width="200px"  Text="Çıkış" OnClick="btn_cikis_Click" />
+                            </a>
+
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">

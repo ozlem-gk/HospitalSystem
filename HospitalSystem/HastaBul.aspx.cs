@@ -23,7 +23,7 @@ namespace HospitalSystem
 
 
             veribul();
-              
+            gelisbilgi();
 
             
         }
@@ -44,6 +44,39 @@ namespace HospitalSystem
                 reader = comm.ExecuteReader();
                 GridView4.DataSource = reader;
                 GridView4.DataBind();
+                //Reader nesnemi kapatıyorum
+                reader.Close();
+            }
+            //hata olursa vereceğim mesaj
+            catch
+            {
+                Response.Write("Bir hata oluştu");
+            }
+            //Bağlantımı kapatıyorum
+            finally
+            {
+                conn.Close();
+            }
+
+
+        }
+        private void gelisbilgi()
+        {
+            //SQL bağlantımı, komutumu ve datareader nesnemi tanımlıyorum.
+
+
+            MySqlDataReader reader;
+            string connectionString = ConfigurationManager.ConnectionStrings["hospitalConnectionString"].ConnectionString;
+            MySqlConnection conn = new MySqlConnection(connectionString);
+
+            MySqlCommand comm = new MySqlCommand("SELECT * FROM hasta_bilgi, gelis_bilgi  WHERE hasta_bilgi.id=gelis_bilgi.hasta_bilgi_id ", conn);
+            try
+            {
+                //Bağlantımı açıyorum, dataReader nesnemi çalıştırıyorum ve GridView kontrolüme DataBind işlemi yapıyorum.
+                conn.Open();
+                reader = comm.ExecuteReader();
+                grd_hastagelis.DataSource = reader;
+                grd_hastagelis.DataBind();
                 //Reader nesnemi kapatıyorum
                 reader.Close();
             }

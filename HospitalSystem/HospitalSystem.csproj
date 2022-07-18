@@ -88,6 +88,7 @@
       <HintPath>..\packages\System.Threading.Tasks.Extensions.4.3.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -117,6 +118,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ates.aspx" />
     <Content Include="Boostrap\assetsb1\demo\chart-area-demo.js" />
     <Content Include="Boostrap\assetsb1\demo\chart-bar-demo.js" />
     <Content Include="Boostrap\assetsb1\demo\chart-pie-demo.js" />
@@ -189,6 +191,8 @@
     <Content Include="Boostrap\src\scss\theme.css" />
     <Content Include="CikisBilgisiMstr.aspx" />
     <Content Include="Defaultt.aspx" />
+    <Content Include="deneme.aspx" />
+    <Content Include="DoktorAra.aspx" />
     <Content Include="GelisBilgiMstr.aspx" />
     <Content Include="HastaBul.aspx" />
     <Content Include="KayitSayfasi.aspx" />
@@ -197,6 +201,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ates.aspx.cs">
+      <DependentUpon>Ates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ates.aspx.designer.cs">
+      <DependentUpon>Ates.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CikisBilgisiMstr.aspx.cs">
       <DependentUpon>CikisBilgisiMstr.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -217,6 +228,20 @@
     </Compile>
     <Compile Include="Defaultt.aspx.designer.cs">
       <DependentUpon>Defaultt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="deneme.aspx.cs">
+      <DependentUpon>deneme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="deneme.aspx.designer.cs">
+      <DependentUpon>deneme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DoktorAra.aspx.cs">
+      <DependentUpon>DoktorAra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DoktorAra.aspx.designer.cs">
+      <DependentUpon>DoktorAra.aspx</DependentUpon>
     </Compile>
     <Compile Include="GelisBilgiMstr.aspx.cs">
       <DependentUpon>GelisBilgiMstr.aspx</DependentUpon>
@@ -254,6 +279,13 @@
       <DependentUpon>MainPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VitalBulgular.Master.cs">
+      <DependentUpon>VitalBulgular.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VitalBulgular.Master.designer.cs">
+      <DependentUpon>VitalBulgular.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="default.Master" />
@@ -348,6 +380,7 @@
     <Content Include="Boostrap\src\scss\_user-variables.scss" />
     <Content Include="Boostrap\src\scss\_user.scss" />
     <None Include="packages.config" />
+    <Content Include="VitalBulgular.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

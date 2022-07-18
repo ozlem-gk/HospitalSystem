@@ -78,13 +78,13 @@ namespace HospitalSystem
         protected global::System.Web.UI.WebControls.Button btn_hastaBul;
 
         /// <summary>
-        /// btn_giris control.
+        /// btn_doktorBul control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_giris;
+        protected global::System.Web.UI.WebControls.Button btn_doktorBul;
 
         /// <summary>
         /// btn_kayit control.

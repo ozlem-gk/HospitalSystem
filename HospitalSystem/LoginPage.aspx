@@ -26,14 +26,9 @@
                                     <div class="card-body">
                                         
                                             <div>
-                                            <asp:DropDownList ID="DropDownList1" runat="server">
-                                                <asp:ListItem>Hemşire</asp:ListItem>
-                                                <asp:ListItem>Doktor</asp:ListItem>
-                                               
-                                            </asp:DropDownList>
-                                            </div>
+
                                         <div>
-                                            Giriş Rolünüz?
+                                            Yetkili Girişi
                                         </div>
                                             <div class="form-floating mb-3">
                                                 

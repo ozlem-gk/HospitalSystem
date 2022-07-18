@@ -45,12 +45,12 @@ namespace HospitalSystem
 
                     Response.Redirect("KayitSayfasi.aspx");
 
-                    ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", "swal('Giriş Yapılamadı!', 'Birdaha deneyiniz!', 'success')", true);
+                    //ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", "swal('Giriş Yapılamadı!', 'Birdaha deneyiniz!', 'success')", true);
 
                 }
                 else
                 {
-                    ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", "swal('Giriş Yapılamadı!', 'Birdaha deneyiniz!', 'error')", true);
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", "swal('Giriş Yapılamadı!', 'Kullanıcı adı ve ya şifre yanlış. Birdaha deneyiniz!', 'error')", true);
 
                 }
             }

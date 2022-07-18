@@ -11,43 +11,52 @@ namespace HospitalSystem
 {
 
 
-    public partial class HastaBul
+    public partial class Ates
     {
 
         /// <summary>
-        /// txt_aranan control.
+        /// doktor_txt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_aranan;
+        protected global::System.Web.UI.WebControls.TextBox doktor_txt;
 
         /// <summary>
-        /// GridView4 control.
+        /// tarih_txt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView4;
+        protected global::System.Web.UI.WebControls.TextBox tarih_txt;
 
         /// <summary>
-        /// grd_hastagelis control.
+        /// txt_servis control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grd_hastagelis;
+        protected global::System.Web.UI.WebControls.TextBox txt_servis;
 
         /// <summary>
-        /// hasta_bul control.
+        /// btn_gelis control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button hasta_bul;
+        protected global::System.Web.UI.WebControls.Button btn_gelis;
+
+        /// <summary>
+        /// grd_girisbilgi_tablo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView grd_girisbilgi_tablo;
     }
 }

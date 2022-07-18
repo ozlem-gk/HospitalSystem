@@ -11,43 +11,34 @@ namespace HospitalSystem
 {
 
 
-    public partial class HastaBul
+    public partial class deneme
     {
 
         /// <summary>
-        /// txt_aranan control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_aranan;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// GridView4 control.
+        /// ddlChart control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView4;
+        protected global::System.Web.UI.WebControls.DropDownList ddlChart;
 
         /// <summary>
-        /// grd_hastagelis control.
+        /// Chart1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grd_hastagelis;
-
-        /// <summary>
-        /// hasta_bul control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button hasta_bul;
+        protected global::System.Web.UI.DataVisualization.Charting.Chart Chart1;
     }
 }

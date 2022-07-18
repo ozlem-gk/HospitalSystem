@@ -161,5 +161,10 @@ namespace HospitalSystem
         {
             Response.Redirect("CikisBilgisiMstr.aspx");
         }
+
+        protected void btn_doktorBul_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DoktorAra.aspx");
+        }
     }
 }
