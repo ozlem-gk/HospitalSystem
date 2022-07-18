@@ -144,7 +144,7 @@
                   <div class="py-3"><img class="img-fluid" src="Boostrap/public/assets/img/illustrations/details-info.png" height="90" alt="" /></div>
                   <div class="py-3">
                     <h4 class="fw-bold card-title">Hasta Grafikleri</h4>
-                      <asp:Button ID="Button4" CssClass="btn btn-lg btn-outline-primary rounded-pill" runat="server" Text="Button" />
+                      <asp:Button ID="Button4" CssClass="btn btn-lg btn-outline-primary rounded-pill" runat="server" Text="Button" OnClick="Button4_Click" />
                     <p class="card-text">You can get 24/7 urgent care for yourself or your children and your lovely family</p>
                   </div>
                 </div>

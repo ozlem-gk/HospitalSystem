@@ -172,5 +172,10 @@ namespace HospitalSystem
             Response.Redirect("Grafikler/GrafikNabiz.aspx");
 
         }
+
+        protected void btn_bulgu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -57,6 +57,27 @@
                 </ChartAreas>  
             </asp:Chart>  
         </div>
+       <div class="container py-4">  
+            <h4 class="text-uppercase text-center">Solunum Grafiği</h4>  
+            <div class="form-group">  
+                <label>Select Chart:</label>  
+                <asp:DropDownList ID="ddlChartSolunum" AutoPostBack="true" runat="server" CssClass="custom-select col-md-4" OnSelectedIndexChanged="ddlChartSolunum_SelectedIndexChanged"></asp:DropDownList>  
+            </div>  
+            <asp:Chart ID="Chart3" runat="server" Width="450px">  
+                <Titles>  
+                    <asp:Title Text="Total Marks of Students"></asp:Title>  
+                </Titles> 
+                <Series>  
+                    <asp:Series Name="Series1" ChartArea="ChartArea1" ChartType="Spline" YValuesPerPoint="2"></asp:Series>  
+                </Series>  
+                <ChartAreas>  
+                    <asp:ChartArea Name="ChartArea1">  
+                        <AxisX Title="Tarih"></AxisX>  
+                        <AxisY Title="Sonuc"></AxisY>  
+                    </asp:ChartArea>  
+                </ChartAreas>  
+            </asp:Chart>  
+        </div>
        
     </form>   
 </body>

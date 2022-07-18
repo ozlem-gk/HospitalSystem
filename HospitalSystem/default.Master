@@ -61,6 +61,9 @@
                             <a class="nav-link" href="tables.html">
                                 <asp:Button ID="btn_kayit" runat="server" BackColor="LightGray" Width="200px"  Text="Hasta Kayıt" OnClick="btn_kayit_Click" />
                             </a>
+                            <a class="nav-link" href="tables.html">
+                                <asp:Button ID="btn_bulgu" runat="server" BackColor="LightGray" Width="200px"  Text="Vital Bulhu Ekle" OnClick="btn_bulgu_Click" />
+                            </a>
                             <a class="nav-link" href="charts.html">
                                 <asp:Button ID="btn_cikis" runat="server" BackColor="LightGray" Width="200px"  Text="Hasta Çıkışı" OnClick="btn_cikis_Click" />
                             </a>

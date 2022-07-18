@@ -39,8 +39,9 @@ namespace HospitalSystem
             Response.Redirect("HastaBul.aspx");
         }
 
-      
-
-     
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Grafikler/GrafikNabiz.aspx");
+        }
     }
 }

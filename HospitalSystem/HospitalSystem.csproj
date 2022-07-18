@@ -199,6 +199,7 @@
     <Content Include="KayitSayfasi.aspx" />
     <Content Include="LoginPage.aspx" />
     <Content Include="MainPage.aspx" />
+    <Content Include="VitalBulgu.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -287,6 +288,13 @@
       <DependentUpon>MainPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VitalBulgu.aspx.cs">
+      <DependentUpon>VitalBulgu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VitalBulgu.aspx.designer.cs">
+      <DependentUpon>VitalBulgu.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="default.Master" />

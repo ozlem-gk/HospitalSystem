@@ -37,28 +37,25 @@ namespace HospitalSystem
 
 
             MySqlDataReader reader;
-            //Bağlantı satırımı ConfigurationManager sınıfı ile web config dosyasından atamış olduğum isimle çekiyorum.
             string connectionString = ConfigurationManager.ConnectionStrings["hospitalConnectionString"].ConnectionString;
             MySqlConnection conn = new MySqlConnection(connectionString);
 
-            //SQL queryimi yazıyorum. Employees tablosundan çekmek istediğim verileri SELECT ile çekiyorum.
             MySqlCommand comm = new MySqlCommand("SELECT `id`, `ad`, `soyad`, `tc_no`, `dogum_tarihi` FROM hasta_bilgi WHERE 1", conn);
             try
             {
-                //Bağlantımı açıyorum, dataReader nesnemi çalıştırıyorum ve GridView kontrolüme DataBind işlemi yapıyorum.
                 conn.Open();
                 reader = comm.ExecuteReader();
                 GridView2.DataSource = reader;
                 GridView2.DataBind();
-                //Reader nesnemi kapatıyorum
+                
                 reader.Close();
             }
-            //hata olursa vereceğim mesaj
+           
             catch
             {
                 Response.Write("Bir hata oluştu");
             }
-            //Bağlantımı kapatıyorum
+            
             finally
             {
                 conn.Close();

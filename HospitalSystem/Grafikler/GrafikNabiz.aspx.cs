@@ -16,12 +16,16 @@ namespace HospitalSystem.Grafikler
         protected void Page_Load(object sender, EventArgs e)
         {
             
-                GetChartDataAtes();
-                GetChartTypesAtes();
-                GetChartData();
-                GetChartTypes();
-                
-            
+            GetChartDataAtes();
+            GetChartTypesAtes();
+            GetChartData();
+            GetChartTypes();
+            GetChartDataSolunum();
+            GetChartTypesSolunum();
+
+
+
+
         }
         private void GetChartTypes()
         {
@@ -38,6 +42,15 @@ namespace HospitalSystem.Grafikler
             {
                 ListItem li = new ListItem(Enum.GetName(typeof(SeriesChartType), chartType), chartType.ToString());
                 ddlChartAtes.Items.Add(li); 
+
+            }
+        }
+        private void GetChartTypesSolunum()
+        {
+            foreach (int chartType in Enum.GetValues(typeof(SeriesChartType)))
+            {
+                ListItem li = new ListItem(Enum.GetName(typeof(SeriesChartType), chartType), chartType.ToString());
+                ddlChartSolunum.Items.Add(li);
 
             }
         }
@@ -81,6 +94,27 @@ namespace HospitalSystem.Grafikler
                 }
             }
         }
+
+        private void GetChartDataSolunum()
+        {
+            string CS = ConfigurationManager.ConnectionStrings["hospitalConnectionString"].ConnectionString;
+            using (MySqlConnection con = new MySqlConnection(CS))
+            {
+                MySqlCommand cmd = new MySqlCommand("grafik_solunum", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                con.Open();
+                MySqlDataReader rdr = cmd.ExecuteReader();
+                // Retrieve the Series to which we want to add DataPoints  
+                Series series = Chart3.Series["Series1"];
+                // Loop thru each Student record  
+                while (rdr.Read())
+                {
+                    // Add X and Y values using AddXY() method  
+                    series.Points.AddXY(rdr["tarih"].ToString(),
+                    rdr["sonuc"]);
+                }
+            }
+        }
         protected void ddlChartNabiz_SelectedIndexChanged(object sender, EventArgs e)
         {
             GetChartData();
@@ -91,6 +125,12 @@ namespace HospitalSystem.Grafikler
         {
             GetChartDataAtes();
             this.Chart2.Series["Series1"].ChartType = (SeriesChartType)Enum.Parse(typeof(SeriesChartType), ddlChartAtes.SelectedValue);
+        }
+
+        protected void ddlChartSolunum_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            GetChartDataSolunum();
+            this.Chart3.Series["Series1"].ChartType = (SeriesChartType)Enum.Parse(typeof(SeriesChartType), ddlChartSolunum.SelectedValue);
         }
     }
 }

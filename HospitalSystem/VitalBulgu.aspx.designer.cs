@@ -11,142 +11,187 @@ namespace HospitalSystem
 {
 
 
-    public partial class _default
+    public partial class VitalBulgu
     {
 
         /// <summary>
-        /// head control.
+        /// txt_ates control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.TextBox txt_ates;
 
         /// <summary>
-        /// form1 control.
+        /// txt_tarihAtes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox txt_tarihAtes;
 
         /// <summary>
-        /// login_page control.
+        /// btn_ates control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button login_page;
+        protected global::System.Web.UI.WebControls.Button btn_ates;
 
         /// <summary>
-        /// register_page control.
+        /// GrdAtes control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button register_page;
+        protected global::System.Web.UI.WebControls.GridView GrdAtes;
 
         /// <summary>
-        /// hasta_cikis control.
+        /// txt_nabiz control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button hasta_cikis;
+        protected global::System.Web.UI.WebControls.TextBox txt_nabiz;
 
         /// <summary>
-        /// btn_yeniGelis control.
+        /// txt_tarihNabiz control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_yeniGelis;
+        protected global::System.Web.UI.WebControls.TextBox txt_tarihNabiz;
 
         /// <summary>
-        /// btn_hastaBul control.
+        /// btn_nabiz control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_hastaBul;
+        protected global::System.Web.UI.WebControls.Button btn_nabiz;
 
         /// <summary>
-        /// btn_doktorBul control.
+        /// GrdNabiz control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_doktorBul;
+        protected global::System.Web.UI.WebControls.GridView GrdNabiz;
 
         /// <summary>
-        /// btn_grafikGit control.
+        /// txt_solunum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_grafikGit;
+        protected global::System.Web.UI.WebControls.TextBox txt_solunum;
 
         /// <summary>
-        /// btn_kayit control.
+        /// txt_tarihSolunum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_kayit;
+        protected global::System.Web.UI.WebControls.TextBox txt_tarihSolunum;
 
         /// <summary>
-        /// btn_bulgu control.
+        /// btn_solunum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_bulgu;
+        protected global::System.Web.UI.WebControls.Button btn_solunum;
 
         /// <summary>
-        /// btn_cikis control.
+        /// GrdSolunum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_cikis;
+        protected global::System.Web.UI.WebControls.GridView GrdSolunum;
 
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// txt_tansiyon control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.TextBox txt_tansiyon;
 
         /// <summary>
-        /// GridView2 control.
+        /// txt_tarihTansiyon control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView2;
+        protected global::System.Web.UI.WebControls.TextBox txt_tarihTansiyon;
 
         /// <summary>
-        /// GridView3 control.
+        /// btn_tansiyon control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView3;
+        protected global::System.Web.UI.WebControls.Button btn_tansiyon;
+
+        /// <summary>
+        /// GrdTansiyon control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GrdTansiyon;
+
+        /// <summary>
+        /// txt_kan_sekeri control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_kan_sekeri;
+
+        /// <summary>
+        /// txt_tarihKan control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txt_tarihKan;
+
+        /// <summary>
+        /// txt_kan control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button txt_kan;
+
+        /// <summary>
+        /// GrdKan control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView GrdKan;
     }
 }
