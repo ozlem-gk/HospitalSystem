@@ -55,8 +55,8 @@
                   <asp:Button ID="Button7" aria-current="page"  CssClass="btn btn-lg btn-outline-primary rounded-pill" runat="server" Text="Doktor Ara" OnClick="Button7_Click" /></a></li>
               <li class="nav-item"><a class="nav-link" href="#">
                   <asp:Button ID="Button8" CssClass="btn btn-lg btn-outline-primary rounded-pill" runat="server" Text="Hasta Ara" OnClick="Button8_Click" /></a></li>
-              <li class="nav-item"><a class="nav-link" href="#testimonial">
-                  <asp:Button ID="Button9" CssClass="btn btn-lg btn-outline-primary rounded-pill" aria-current="page" runat="server" Text="Grafiklere Git" /></a></li>
+              <li class="nav-item"><a class="nav-link" href="#">
+                  <asp:Button ID="btn_vital" CssClass="btn btn-lg btn-outline-primary rounded-pill" runat="server" Text="Vital Bulgu Girişi" /></a></li>
               <li class="nav-item"><a class="nav-link" href="#about">
                   <asp:Button ID="Button10" runat="server" CssClass="btn btn-lg btn-outline-primary rounded-pill" Text="Çıkış Yap" /></a></li>
             </ul>

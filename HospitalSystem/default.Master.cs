@@ -166,5 +166,11 @@ namespace HospitalSystem
         {
             Response.Redirect("DoktorAra.aspx");
         }
+
+        protected void btn_grafikGit_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Grafikler/GrafikNabiz.aspx");
+
+        }
     }
 }

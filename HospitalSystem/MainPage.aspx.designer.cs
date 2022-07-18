@@ -42,13 +42,13 @@ namespace HospitalSystem
         protected global::System.Web.UI.WebControls.Button Button8;
 
         /// <summary>
-        /// Button9 control.
+        /// btn_vital control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button9;
+        protected global::System.Web.UI.WebControls.Button btn_vital;
 
         /// <summary>
         /// Button10 control.

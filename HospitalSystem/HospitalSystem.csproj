@@ -46,6 +46,7 @@
     <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Data.v21.1, Version=21.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Google.Protobuf, Version=3.19.4.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Protobuf.3.19.4\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
@@ -118,7 +119,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Ates.aspx" />
     <Content Include="Boostrap\assetsb1\demo\chart-area-demo.js" />
     <Content Include="Boostrap\assetsb1\demo\chart-bar-demo.js" />
     <Content Include="Boostrap\assetsb1\demo\chart-pie-demo.js" />
@@ -194,6 +194,7 @@
     <Content Include="deneme.aspx" />
     <Content Include="DoktorAra.aspx" />
     <Content Include="GelisBilgiMstr.aspx" />
+    <Content Include="Grafikler\GrafikNabiz.aspx" />
     <Content Include="HastaBul.aspx" />
     <Content Include="KayitSayfasi.aspx" />
     <Content Include="LoginPage.aspx" />
@@ -201,13 +202,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ates.aspx.cs">
-      <DependentUpon>Ates.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Ates.aspx.designer.cs">
-      <DependentUpon>Ates.aspx</DependentUpon>
-    </Compile>
     <Compile Include="CikisBilgisiMstr.aspx.cs">
       <DependentUpon>CikisBilgisiMstr.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -250,6 +244,20 @@
     <Compile Include="GelisBilgiMstr.aspx.designer.cs">
       <DependentUpon>GelisBilgiMstr.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Grafikler\GrafikNabiz.aspx.cs">
+      <DependentUpon>GrafikNabiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Grafikler\GrafikNabiz.aspx.designer.cs">
+      <DependentUpon>GrafikNabiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Grafikler\Grafikler.Master.cs">
+      <DependentUpon>Grafikler.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Grafikler\Grafikler.Master.designer.cs">
+      <DependentUpon>Grafikler.Master</DependentUpon>
+    </Compile>
     <Compile Include="HastaBul.aspx.cs">
       <DependentUpon>HastaBul.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -279,13 +287,6 @@
       <DependentUpon>MainPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VitalBulgular.Master.cs">
-      <DependentUpon>VitalBulgular.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="VitalBulgular.Master.designer.cs">
-      <DependentUpon>VitalBulgular.Master</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="default.Master" />
@@ -379,8 +380,8 @@
     <Content Include="Boostrap\src\scss\_bootstrap.scss" />
     <Content Include="Boostrap\src\scss\_user-variables.scss" />
     <Content Include="Boostrap\src\scss\_user.scss" />
+    <Content Include="Grafikler\Grafikler.Master" />
     <None Include="packages.config" />
-    <Content Include="VitalBulgular.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -394,6 +395,9 @@
     <Folder Include="Boostrap\public\vendors\popper\" />
     <Folder Include="Boostrap\src\pug\mixins\layouts\" />
     <Folder Include="Boostrap\src\pug\pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

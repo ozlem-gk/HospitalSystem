@@ -53,7 +53,9 @@
                             <a class="nav-link">
                                 <asp:Button ID="btn_doktorBul" runat="server" BackColor="#ff3300" Width="200px"  Text="Doktor Ara" OnClick="btn_doktorBul_Click" />
                             </a>
-                            
+                            <a class="nav-link">
+                                <asp:Button ID="btn_grafikGit" runat="server" BackColor="#ff3300" Width="200px"  Text="Grafiklere Git" OnClick="btn_grafikGit_Click" />
+                            </a>
                             
                             
                             <a class="nav-link" href="tables.html">

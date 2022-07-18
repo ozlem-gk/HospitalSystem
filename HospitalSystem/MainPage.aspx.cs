@@ -38,5 +38,9 @@ namespace HospitalSystem
         {
             Response.Redirect("HastaBul.aspx");
         }
+
+      
+
+     
     }
 }
