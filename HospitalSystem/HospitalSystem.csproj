@@ -189,6 +189,7 @@
     <Content Include="Boostrap\src\js\theme.js" />
     <Content Include="Boostrap\src\js\utils.js" />
     <Content Include="Boostrap\src\scss\theme.css" />
+    <Content Include="Cikis.aspx" />
     <Content Include="CikisBilgisiMstr.aspx" />
     <Content Include="Defaultt.aspx" />
     <Content Include="deneme.aspx" />
@@ -203,6 +204,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cikis.aspx.cs">
+      <DependentUpon>Cikis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cikis.aspx.designer.cs">
+      <DependentUpon>Cikis.aspx</DependentUpon>
+    </Compile>
     <Compile Include="CikisBilgisiMstr.aspx.cs">
       <DependentUpon>CikisBilgisiMstr.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

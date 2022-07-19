@@ -43,29 +43,30 @@
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading"></div>
                             <a class="nav-link" href="index.html">
-                                <asp:Button ID="btn_yeniGelis" runat="server" BackColor="#3366ff" Width="200px" Text="Yeni Geliş Aç" OnClick="btn_yeniGelis_Click" />
+                                
+                                <asp:Button ID="btn_yeniGelis" runat="server" BackColor="#0288D1" Width="200px" Text="Yeni Geliş Aç" OnClick="btn_yeniGelis_Click" />
                             </a>
                            
                             <a class="nav-link">
-                                <asp:Button ID="btn_hastaBul" runat="server" BackColor="LightGreen" Width="200px"  Text="Hasta Bul" OnClick="btn_hastaBul_Click" />
+                                <asp:Button ID="btn_hastaBul" runat="server" BackColor="#BDBDBD" Width="200px"  Text="Hasta Bul" OnClick="btn_hastaBul_Click" />
                             </a>
                             
                             <a class="nav-link">
-                                <asp:Button ID="btn_doktorBul" runat="server" BackColor="#ff3300" Width="200px"  Text="Doktor Ara" OnClick="btn_doktorBul_Click" />
+                                <asp:Button ID="btn_doktorBul" runat="server" BackColor="#BDBDBD" Width="200px"  Text="Doktor Ara" OnClick="btn_doktorBul_Click" />
                             </a>
                             <a class="nav-link">
-                                <asp:Button ID="btn_grafikGit" runat="server" BackColor="#ff3300" Width="200px"  Text="Grafiklere Git" OnClick="btn_grafikGit_Click" />
+                                <asp:Button ID="btn_grafikGit" runat="server" BackColor="#FFC107" Width="200px"  Text="Grafiklere Git" OnClick="btn_grafikGit_Click" />
                             </a>
                             
                             
                             <a class="nav-link" href="tables.html">
-                                <asp:Button ID="btn_kayit" runat="server" BackColor="LightGray" Width="200px"  Text="Hasta Kayıt" OnClick="btn_kayit_Click" />
+                                <asp:Button ID="btn_kayit" runat="server" BackColor="#00BCD4" Width="200px"  Text="Hasta Kayıt" OnClick="btn_kayit_Click" />
                             </a>
                             <a class="nav-link" href="tables.html">
-                                <asp:Button ID="btn_bulgu" runat="server" BackColor="LightGray" Width="200px"  Text="Vital Bulhu Ekle" OnClick="btn_bulgu_Click" />
+                                <asp:Button ID="btn_bulgu" runat="server" BackColor="#00BCD4" Width="200px"  Text="Vital Bulhu Ekle" OnClick="btn_bulgu_Click" />
                             </a>
                             <a class="nav-link" href="charts.html">
-                                <asp:Button ID="btn_cikis" runat="server" BackColor="LightGray" Width="200px"  Text="Hasta Çıkışı" OnClick="btn_cikis_Click" />
+                                <asp:Button ID="btn_cikis" runat="server" BackColor="#F44336" Width="200px"  Text="Hasta Çıkışı" OnClick="btn_cikis_Click" />
                             </a>
                         </div>
                     </div>

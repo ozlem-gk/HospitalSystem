@@ -175,6 +175,7 @@ namespace HospitalSystem
 
         protected void btn_bulgu_Click(object sender, EventArgs e)
         {
+            Response.Redirect("VitalBulgu.aspx");
 
         }
     }

@@ -43,5 +43,22 @@ namespace HospitalSystem
         {
             Response.Redirect("Grafikler/GrafikNabiz.aspx");
         }
+
+        protected void btn_vital_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("VitalBulgu.aspx");
+
+        }
+
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button10_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Cikis.aspx");
+
+        }
     }
 }

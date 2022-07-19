@@ -45,7 +45,7 @@
     <!-- ===============================================-->
     <main class="main" id="top">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" data-navbar-on-scroll="data-navbar-on-scroll">
-        <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="#"><img class="d-inline-block me-3" src="Boostrap/public/assets/img/icons/logo.png" alt="" />Trafalgar</a>
+        <div class="container">
           <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
           <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
@@ -56,9 +56,9 @@
               <li class="nav-item"><a class="nav-link" href="#">
                   <asp:Button ID="Button8" CssClass="btn btn-lg btn-outline-primary rounded-pill" runat="server" Text="Hasta Ara" OnClick="Button8_Click" /></a></li>
               <li class="nav-item"><a class="nav-link" href="#">
-                  <asp:Button ID="btn_vital" CssClass="btn btn-lg btn-outline-primary rounded-pill" runat="server" Text="Vital Bulgu Girişi" /></a></li>
+                  <asp:Button ID="btn_vital" CssClass="btn btn-lg btn-outline-primary rounded-pill" runat="server" Text="Vital Bulgu Girişi" OnClick="btn_vital_Click" /></a></li>
               <li class="nav-item"><a class="nav-link" href="#about">
-                  <asp:Button ID="Button10" runat="server" CssClass="btn btn-lg btn-outline-primary rounded-pill" Text="Çıkış Yap" /></a></li>
+                  <asp:Button ID="Button10" runat="server" CssClass="btn btn-lg btn-outline-primary rounded-pill" Text="Çıkış Yap" OnClick="Button10_Click" /></a></li>
             </ul>
           </div>
         </div>
@@ -91,7 +91,7 @@
         <div class="container-lg">
           <div class="row justify-content-center">
             <div class="col-3 text-center">
-              <h2 class="fw-bold">Our services</h2>
+              <h2 class="fw-bold">Hizmetler</h2>
               <hr class="w-25 mx-auto text-dark" style="height:2px;" />
             </div>
           </div>
@@ -108,7 +108,7 @@
                   <div class="py-3">
                     <h4 class="fw-bold card-title">Doktor Ara</h4>
                       <asp:Button ID="Button2" CssClass="btn btn-lg btn-outline-primary rounded-pill" runat="server" Text="Button" OnClick="Button2_Click" />
-                    <p class="card-text">Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
+                    <p class="card-text">Yüzlerce Doktor arasından Doktorunu bul.</p>
                   </div>
                 </div>
               </div>
@@ -119,8 +119,8 @@
                   <div class="py-3"><img class="img-fluid" src="Boostrap/public/assets/img/illustrations/search.png" height="90" alt="" /></div>
                   <div class="py-3">
                     <h4 class="fw-bold card-title">Hasta Kayıtları</h4>
-                      <asp:Button ID="Button5" CssClass="btn btn-lg btn-outline-primary rounded-pill" runat="server" Text="Button" />
-                    <p class="card-text">Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
+                      <asp:Button ID="Button5" CssClass="btn btn-lg btn-outline-primary rounded-pill" runat="server" Text="Button" OnClick="Button5_Click" />
+                    <p class="card-text">Aradığın hastayı kolayca bul.</p>
                   </div>
                 </div>
               </div>
@@ -145,7 +145,7 @@
                   <div class="py-3">
                     <h4 class="fw-bold card-title">Hasta Grafikleri</h4>
                       <asp:Button ID="Button4" CssClass="btn btn-lg btn-outline-primary rounded-pill" runat="server" Text="Button" OnClick="Button4_Click" />
-                    <p class="card-text">You can get 24/7 urgent care for yourself or your children and your lovely family</p>
+                    <p class="card-text">Hasta vital bulgu grafikleri.</p>
                   </div>
                 </div>
               </div>
@@ -155,8 +155,8 @@
                 <div class="card-body text-center text-md-start">
                   <div class="py-3"><img class="img-fluid" src="Boostrap/public/assets/img/illustrations/emergency-care.png" height="90" alt="" /></div>
                   <div class="py-3">
-                    <h4 class="fw-bold card-title">Emergency care</h4>
-                    <p class="card-text">Track and save your medical history and health data </p>
+                    <h4 class="fw-bold card-title">Acil Bakım</h4>
+                    <p class="card-text">Tıbbi geçmişinizi ve sağlık verilerinizi takip edin.</p>
                   </div>
                 </div>
               </div>
@@ -166,60 +166,26 @@
                 <div class="card-body text-center text-md-start">
                   <div class="py-3"><img class="img-fluid" src="Boostrap/public/assets/img/illustrations/tracking.png" height="90" alt="" /></div>
                   <div class="py-3">
-                    <h4 class="fw-bold card-title">Tracking</h4>
-                    <p class="card-text">Track and save your medical history and health data </p>
+                    <h4 class="fw-bold card-title">Raporlama</h4>
+                    <p class="card-text">Tıbbi verilerinizi raporlayın.</p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="text-center py-4">
-              <button class="btn btn-lg btn-outline-primary rounded-pill" type="submit">Learn more </button>
+              <button class="btn btn-lg btn-outline-primary rounded-pill" type="submit">Learn more</button>
             </div>
           </div>
         </div>
       </section>
-      <section class="py-6 py-lg-8" id="about">
-        <div class="bg-holder" style="background-image:url(Boostrap/public/assets/img/illustrations/dot.png);background-position:right bottom;background-size:auto;margin-top:50px;">
-        </div>
-        <!--/.bg-holder-->
-
-        <div class="container">
-          <div class="row g-xl-0 align-items-center">
-            <div class="col-md-6"><img class="img-fluid mb-5 mb-md-0" src="Boostrap/public/assets/img/illustrations/about-1.png" width="480" alt="" /></div>
-            <div class="col-md-6 text-center text-md-start">
-              <h2 class="fw-bold lh-base">Leading healthcare <br />providers</h2>
-              <hr class="text-dark mx-auto mx-md-0" style="height:2px;width:50px" />
-              <p class="pt-3">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, it’s not just work. We take pride in the solutions we deliver</p>
-              <div class="py-3">
-                <button class="btn btn-lg btn-outline-primary rounded-pill" type="submit">Learn more </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
 
           <!-- ============================================-->
       <!-- <section> begin ============================-->
       <section class="py-6 py-lg-8">
 
-        <div class="container">
-          <div class="row g-xl-0 align-items-center">
-            <div class="col-md-6 order-md-1 text-md-end"><img class="img-fluid mb-5 mb-md-0" src="Boostrap/public/assets/img/illustrations/about-1.png" width="480" alt="" /></div>
-            <div class="col-md-6 text-center text-md-start order-md-0">
-              <h2 class="fw-bold lh-base">Download our <br />mobile apps</h2>
-              <hr class="text-dark mx-auto mx-md-0" style="height:2px;width:50px" />
-              <p class="pt-3">Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely</p>
-              <div class="py-3">
-                <button class="btn btn-lg btn-outline-primary rounded-pill" type="submit">Giriş yapın
-                  <svg class="bi bi-arrow-down-short" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div><!-- end of .container-->
+       
 
       </section>
       <!-- <section> close ============================-->
@@ -236,84 +202,7 @@
           </div>
           <!--/.bg-holder-->
 
-          <div class="carousel slide" id="carouselExampleDark" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <div class="row h-100">
-                  <div class="col-12">
-                    <div class="card text-white bg-primary-gradient">
-                      <div class="card-body p-4 p-md-4 p-lg-7">
-                        <h2 class="fw-bold text-white text-center">What our customer are saying</h2>
-                        <hr class="mx-auto" style="height:2px;width:50px" />
-                        <div class="d-md-flex align-items-md-center mt-5 text-center text-md-start"><img class="img-fluid me-4 me-md-3 me-lg-4" src="assets/img/gallery/user-1.png" width="100" alt="" />
-                          <div class="w-md-25 my-3">
-                            <h5 class="mb-0 fw-medium text-white">Edward Newgate</h5>
-                            <p class="fw-normal mb-0">Founder Circle</p>
-                          </div>
-                          <div class="w-md-75">
-                            <p class="card-text ms-md-5">“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <div class="row h-100">
-                  <div class="col-12">
-                    <div class="card text-white bg-primary-gradient">
-                      <div class="card-body p-4 p-md-4 p-lg-7">
-                        <h2 class="fw-bold text-white text-center">Our dear customers said about us</h2>
-                        <hr class="mx-auto" style="height:2px;width:50px" />
-                        <div class="d-md-flex align-items-md-center mt-5 text-center text-md-start"><img class="img-fluid me-4 me-md-3 me-lg-4" src="assets/img/gallery/user-2.png" width="100" alt="" />
-                          <div class="w-md-25 my-3">
-                            <h5 class="mb-0 fw-medium text-white">Jhon Doe</h5>
-                            <p class="fw-normal mb-0">UI/UX Designer</p>
-                          </div>
-                          <div class="w-md-75">
-                            <p class="card-text ms-md-5">“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row h-100">
-                  <div class="col-12">
-                    <div class="card text-white bg-primary-gradient">
-                      <div class="card-body p-4 p-md-4 p-lg-7">
-                        <h2 class="fw-bold text-white text-center">Our dear customers said about us</h2>
-                        <hr class="mx-auto" style="height:2px;width:50px" />
-                        <div class="d-md-flex align-items-md-center mt-5 text-center text-md-start"><img class="img-fluid me-4 me-md-3 me-lg-4" src="assets/img/gallery/user-3.png" width="100" alt="" />
-                          <div class="w-md-25 my-3">
-                            <h5 class="mb-0 fw-medium text-white">Jeny Doe</h5>
-                            <p class="fw-normal mb-0">Web Designer</p>
-                          </div>
-                          <div class="w-md-75">
-                            <p class="card-text ms-md-5">“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous, long calls, or administrative hassle) and securely”</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row mt-4 flex-center">
-              <div class="col-4 col-sm-5 text-end position-relative z-index-2"><a class="carousel-control-prev carousel-icon z-index-2" href="#carouselExampleDark" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></a></div>
-              <div class="col-auto position-relative z-index-2">
-                <ol class="carousel-indicators">
-                  <li class="active" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"></li>
-                  <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
-                  <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
-                </ol>
-              </div>
-              <div class="col-4 col-sm-5 position-relative z-index-2"><a class="carousel-control-next carousel-icon z-index-2" href="#carouselExampleDark" role="button" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></a></div>
-            </div>
-          </div>
+          
         </div>
       </section>
       <section>
@@ -328,7 +217,7 @@
 
           <div class="row flex-center">
             <div class="col-auto text-center">
-              <h2 class="fw-bold">Check out our latest article</h2>
+              <h2 class="fw-bold">Son Yayınlanan Makaleler</h2>
               <hr class="mx-auto text-dark" style="height:2px;width:50px" />
             </div>
           </div>
@@ -384,20 +273,18 @@
         <div class="container">
           <div class="row">
             <div class="col-12 col-lg-4 order-0 order-sm-0 pe-6"><a class="text-decoration-none" href="#"><img class="img-fluid me-2" src="assets/img/icons/footer-logo.png" alt="" /><span class="fw-bold fs-1 text-light">Trafalgar</span></a>
-              <p class="mt-3 text-white">Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone</p>
+              <p class="mt-3 text-white"></p>
             </div>
             <div class="col-4 col-md-4 col-lg mb-3 order-2 order-sm-1">
-              <h6 class="lh-lg fw-bold text-light">Company</h6>
+              <h6 class="lh-lg fw-bold text-light">Proje</h6>
               <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">About</a></li>
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Testimonials</a></li>
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!"><asp:Button ID="Button6" runat="server" Text="Button" /></a>
-                    </li>
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Apps</a></li>
+                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Hakkında</a></li>
+                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Kalite Kontrol</a></li>
+            
               </ul>
             </div>
             <div class="col-4 col-md-4 col-lg mb-3 order-3 order-sm-2">
-              <h6 class="lh-lg fw-bold text-light"> Region </h6>
+              <h6 class="lh-lg fw-bold text-light"> Bölge </h6>
               <ul class="list-unstyled mb-md-4 mb-lg-0">
                 <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Indonesia</a></li>
                 <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Singapore</a></li>
@@ -407,13 +294,13 @@
               </ul>
             </div>
             <div class="col-4 col-md-4 col-lg mb-3 order-1 order-sm-3">
-              <h6 class="lh-lg fw-bold text-light">Help </h6>
+              <h6 class="lh-lg fw-bold text-light">Destek </h6>
               <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Help center</a></li>
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Contact support</a></li>
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Guide</a></li>
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Instructions</a></li>
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">How it works</a></li>
+                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Yardım Merkezi</a></li>
+                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">İletişim Destek</a></li>
+                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Yönerge</a></li>
+                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Talimatlar</a></li>
+                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Nasıl İşliyor?</a></li>
               </ul>
             </div>
           </div>
