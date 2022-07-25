@@ -178,5 +178,10 @@ namespace HospitalSystem
             Response.Redirect("VitalBulgu.aspx");
 
         }
+
+        protected void btn_anasayfa_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MainPage.aspx");
+        }
     }
 }
