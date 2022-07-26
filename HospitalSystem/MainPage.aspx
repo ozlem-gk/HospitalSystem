@@ -173,7 +173,7 @@
               </div>
             </div>
             <div class="text-center py-4">
-              <button class="btn btn-lg btn-outline-primary rounded-pill" type="submit">Learn more</button>
+              <button class="btn btn-lg btn-outline-primary rounded-pill" type="submit">Daha Fazla</button>
             </div>
           </div>
         </div>
@@ -226,37 +226,18 @@
               <div class="card h-100 rounded-3 shadow"><img src="Boostrap/public/assets/img/gallery/article-1.png" alt="" />
                 <div class="card-body p-4 text-center text-md-start">
                   <h5 class="fw-bold">Disease detection</h5>
-                  <p class="card-text">In this case, the role of the health laboratory is very important to do a disease detection...</p><a class="stretched-link text-decoration-none" href="#" role="button">Read more
-                    <svg class="bi bi-arrow-right-short" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
-                    </svg></a>
                 </div>
               </div>
             </div>
             <div class="col-12 col-sm-9 col-md-4 mt-4">
               <div class="card h-100 rounded-3 shadow"><img src="Boostrap/public/assets/img/gallery/article-2.png" alt="" />
                 <div class="card-body p-4 text-center text-md-start">
-                  <h5 class="fw-bold">Herbal medicines </h5>
-                  <p class="card-text">Herbal medicine is very widely used at this time because of its very good for your health...</p><a class="stretched-link text-decoration-none" href="#" role="button">Read more
-                    <svg class="bi bi-arrow-right-short" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
-                    </svg></a>
                 </div>
               </div>
             </div>
             <div class="col-12 col-sm-9 col-md-4 mt-4">
               <div class="card h-100 rounded-3 shadow"><img src="Boostrap/public/assets/img/gallery/article-3.png" alt="" />
-                <div class="card-body p-4 text-center text-md-start">
-                  <h5 class="fw-bold">Natural care </h5>
-                  <p class="card-text">A healthy lifestyle should start from now and also for your skin health.There are some...</p><a class="stretched-link text-decoration-none" href="#" role="button">Read more
-                    <svg class="bi bi-arrow-right-short" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                      <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
-                    </svg></a>
                 </div>
-              </div>
-            </div>
-            <div class="text-center pt-4 z-index-2">
-              <button class="btn btn-lg btn-outline-primary rounded-pill z-index-2 hover-top" type="submit">View all</button>
             </div>
           </div>
         </div>
@@ -270,41 +251,7 @@
         </div>
         <!--/.bg-holder-->
 
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-4 order-0 order-sm-0 pe-6"><a class="text-decoration-none" href="#"><img class="img-fluid me-2" src="assets/img/icons/footer-logo.png" alt="" /><span class="fw-bold fs-1 text-light">Trafalgar</span></a>
-              <p class="mt-3 text-white"></p>
-            </div>
-            <div class="col-4 col-md-4 col-lg mb-3 order-2 order-sm-1">
-              <h6 class="lh-lg fw-bold text-light">Proje</h6>
-              <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Hakkında</a></li>
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Kalite Kontrol</a></li>
-            
-              </ul>
-            </div>
-            <div class="col-4 col-md-4 col-lg mb-3 order-3 order-sm-2">
-              <h6 class="lh-lg fw-bold text-light"> Bölge </h6>
-              <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Indonesia</a></li>
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Singapore</a></li>
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Guide</a></li>
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Hongkong</a></li>
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Canada</a></li>
-              </ul>
-            </div>
-            <div class="col-4 col-md-4 col-lg mb-3 order-1 order-sm-3">
-              <h6 class="lh-lg fw-bold text-light">Destek </h6>
-              <ul class="list-unstyled mb-md-4 mb-lg-0">
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Yardım Merkezi</a></li>
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">İletişim Destek</a></li>
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Yönerge</a></li>
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Talimatlar</a></li>
-                <li class="lh-lg"><a class="text-light fs--1 text-decoration-none" href="#!">Nasıl İşliyor?</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+       
       </section>
       
 
