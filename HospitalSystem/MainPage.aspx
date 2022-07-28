@@ -225,7 +225,7 @@
             <div class="col-12 col-sm-9 col-md-4 mt-4">
               <div class="card h-100 rounded-3 shadow"><img src="Boostrap/public/assets/img/gallery/article-1.png" alt="" />
                 <div class="card-body p-4 text-center text-md-start">
-                  <h5 class="fw-bold">Disease detection</h5>
+                  
                 </div>
               </div>
             </div>
